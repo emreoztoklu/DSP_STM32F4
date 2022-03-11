@@ -1,0 +1,1330 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: e o, default, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.34.0.0
+Toolchain Path:  D:\Program Files\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+F:\DSP\DSP_ARM\codes\test1\MDK-ARM\test1.uvprojx
+Project File Date:  03/07/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'test1'
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c' - object file renamed from 'test\stm32f4xx_hal.o' to 'test\stm32f4xx_hal_1.o'.
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c' - object file renamed from 'test\stm32f4xx_hal_cortex.o' to 'test\stm32f4xx_hal_cortex_1.o'.
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c' - object file renamed from 'test\stm32f4xx_hal_gpio.o' to 'test\stm32f4xx_hal_gpio_1.o'.
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c' - object file renamed from 'test\stm32f4xx_hal_pwr.o' to 'test\stm32f4xx_hal_pwr_1.o'.
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c' - object file renamed from 'test\stm32f4xx_hal_pwr_ex.o' to 'test\stm32f4xx_hal_pwr_ex_1.o'.
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c' - object file renamed from 'test\stm32f4xx_hal_rcc.o' to 'test\stm32f4xx_hal_rcc_1.o'.
+Note: source file 'D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c' - object file renamed from 'test\stm32f4xx_hal_rcc_ex.o' to 'test\stm32f4xx_hal_rcc_ex_1.o'.
+Note: source file 'RTE\Device\STM32F407VGTx\startup_stm32f407xx.s' - object file renamed from 'test\startup_stm32f407xx.o' to 'test\startup_stm32f407xx_1.o'.
+Note: source file 'RTE\Device\STM32F407VGTx\system_stm32f4xx.c' - object file renamed from 'test\system_stm32f4xx.o' to 'test\system_stm32f4xx_1.o'.
+assembling startup_stm32f407xx.s...
+compiling waveforms.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+..\Core\Src\waveforms.c: 5 warnings, 30 errors
+compiling stm32f4xx_it.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Core/Src/stm32f4xx_it.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_tim.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c: 1 warning, 0 errors
+compiling gpio.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Core/Src/gpio.c: 1 warning, 0 errors
+compiling main.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+../Core/Src/main.c: 6 warnings, 30 errors
+compiling stm32f4xx_hal_rcc.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_tim_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_msp.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Core/Src/stm32f4xx_hal_msp.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_rcc_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_flash.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_flash_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_flash_ramfunc.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_dma_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_dma.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c: 1 warning, 0 errors
+compiling BasicMathFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c: 5 warnings, 30 errors
+compiling stm32f4xx_hal_gpio.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c: 1 warning, 0 errors
+compiling BayesFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c: 5 warnings, 30 errors
+compiling stm32f4xx_hal_pwr_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c: 1 warning, 0 errors
+compiling CommonTables.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\CommonTables.c: 5 warnings, 30 errors
+compiling ComplexMathFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c: 5 warnings, 30 errors
+compiling ControllerFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c: 5 warnings, 30 errors
+compiling stm32f4xx_hal_pwr.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c: 1 warning, 0 errors
+compiling DistanceFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c: 5 warnings, 30 errors
+compiling FastMathFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c: 5 warnings, 30 errors
+compiling MatrixFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c: 5 warnings, 30 errors
+compiling FilteringFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c: 5 warnings, 30 errors
+compiling stm32f4xx_hal_cortex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c: 1 warning, 0 errors
+compiling SVMFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c: 5 warnings, 30 errors
+compiling StatisticsFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c: 5 warnings, 30 errors
+compiling SupportFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c: 5 warnings, 30 errors
+compiling TransformFunctions.c...
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1132): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1134): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1735): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(1740): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2680): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2695): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2793): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2811): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(2830): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5532): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5545): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5558): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5571): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5606): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5642): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5680): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(5718): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): warning:  #174-D: expression has no effect
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6491): error:  #65: expected a ";"
+      int32_t i;                                   /* Index variable */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6495): error:  #20: identifier "i" is undefined
+      i = (int32_t) ((x - S->x1) / xSpacing);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6548): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6553): error:  #20: identifier "index" is undefined
+      index = ((x & (q31_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): warning:  #174-D: expression has no effect
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6606): error:  #65: expected a ";"
+      int32_t index;                               /* Index to read nearest output values */
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #20: identifier "index" is undefined
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #31: expression must have integral type
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6611): error:  #18: expected a ")"
+      index = ((x & (int32_t)0xFFF00000) >> 20);
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6911): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6912): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include\arm_math.h(6914): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c: 5 warnings, 30 errors
+compiling system_stm32f4xx.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Core/Src/system_stm32f4xx.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_exti.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c: 1 warning, 0 errors
+compiling stm32f4xx_hal.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c: 1 warning, 0 errors
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal_pwr.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_cortex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c: 1 warning, 0 errors
+compiling stm32f4xx_hal.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_gpio.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c(126): warning:  #47-D: incompatible redefinition of macro "GPIO_MODE"  (declared at line 256 of "../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h")
+  #define GPIO_MODE             0x00000003U
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c(127): warning:  #47-D: incompatible redefinition of macro "EXTI_MODE"  (declared at line 266 of "../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h")
+  #define EXTI_MODE             0x10000000U
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c: 3 warnings, 0 errors
+compiling stm32f4xx_hal_pwr_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_rcc_ex.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c: 1 warning, 0 errors
+compiling system_stm32f4xx.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+RTE\Device\STM32F407VGTx\system_stm32f4xx.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_rcc.c...
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(52): warning:  #47-D: incompatible redefinition of macro "__FPU_PRESENT" 
+  #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c: 1 warning, 0 errors
+"test\test.axf" - 450 Error(s), 105 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+   * Component: DSP Variant: Source Version: 1.8.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.7.9
+   * Component: Common Version: 1.7.9
+   * Component: Cortex Version: 1.7.9
+   * Component: GPIO Version: 1.7.9
+   * Component: PWR Version: 1.7.9
+   * Component: RCC Version: 1.7.9
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
+  .\RTE\_test1
+  D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include
+  D:\Users\arge12\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude
+  D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  D:\Users\arge12\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+
+   * Component: ARM::CMSIS:DSP:Source:1.8.0
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c
+      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
+      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c
+      Source file:   CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTables.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c
+      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.7.9
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  MDK\Templates\Inc\main.h
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Source file:   MDK\Templates_LL\Src\main.c
+      Source file:   MDK\Templates\Src\main.c
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:21
+</pre>
+</body>
+</html>

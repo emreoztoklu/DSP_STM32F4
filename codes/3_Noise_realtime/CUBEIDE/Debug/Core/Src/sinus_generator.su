@@ -1,0 +1,2 @@
+../Core/Src/sinus_generator.c:3:6:sine_generator_init_q15	48	static
+../Core/Src/sinus_generator.c:28:7:sine_calc_sample_q15	24	static
