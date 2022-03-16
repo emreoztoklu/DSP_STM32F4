@@ -12,7 +12,6 @@ float32_t inputSample;
 float32_t inputMean;
 
 extern float32_t InputSignal_f32_1kHz_15kHz[SIGNAL_LENGHT];
-
 float32_t *inputSignal = &InputSignal_f32_1kHz_15kHz[0];
 
 
@@ -31,17 +30,18 @@ float32_t signal_mean(float32_t *sig_src_arr, uint32_t sig_length);
 
 
 int main(void){
-	HAL_Init();
+ 	HAL_Init();
 	SystemClock_Config();
 	freq = HAL_RCC_GetHCLKFreq();
 	
 	
-	inputMean = signal_mean((float32_t*)&inputSignal,(uint32_t)SIGNAL_LENGHT);
+	//inputMean = signal_mean((float32_t*)&inputSignal,(uint32_t)SIGNAL_LENGHT);
+	arm_mean_f32((float32_t*)&inputSignal[0], SIGNAL_LENGHT,&inputMean);
+	
 	
 	while(1){	
 	}	
 }
-
 
 
 void plot_input_signal(void){
@@ -55,6 +55,7 @@ void plot_input_signal(void){
 	}
 }
 
+
 float32_t signal_mean(float32_t *sig_src_arr, uint32_t sig_length){
 		
 	uint32_t i;
@@ -66,11 +67,6 @@ float32_t signal_mean(float32_t *sig_src_arr, uint32_t sig_length){
 	
 	return _mean = _mean /(float32_t)sig_length;
 }
-
-
-
-
-
 
 
 void SysTick_Handler(void){
