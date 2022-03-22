@@ -1,2 +1,2 @@
-../Core/Src/clock.c:7:6:SystemClock_Config	88	static
-../Core/Src/clock.c:58:7:_Error_Handler	16	static
+clock.c:7:6:SystemClock_Config	88	static
+clock.c:58:7:_Error_Handler	16	static

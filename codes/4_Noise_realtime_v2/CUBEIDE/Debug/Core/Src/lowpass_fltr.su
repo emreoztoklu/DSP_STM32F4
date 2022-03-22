@@ -1,2 +1,2 @@
-../Core/Src/lowpass_fltr.c:39:6:low_pass_filter_init	16	static
-../Core/Src/lowpass_fltr.c:45:7:low_pass_filter	24	static
+lowpass_fltr.c:39:6:low_pass_filter_init	16	static
+lowpass_fltr.c:45:7:low_pass_filter	24	static
