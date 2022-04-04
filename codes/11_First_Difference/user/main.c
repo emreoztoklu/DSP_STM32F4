@@ -108,10 +108,9 @@ void calc_sig_DFT(float32_t *sig_src_arr, float32_t *sig_dest_rex_arr, float32_t
 void get_DFT_output_Magnitude(void){
 	int k;
 	
-	for(k = 0; k < SIGNAL_LENGHT/2; k++){
+	for(k = 0; k < (SIGNAL_LENGHT/2); k++){
 		ReX[k] = fabs(ReX[k]);
 	}
-
 }
 
 

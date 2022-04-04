@@ -1,0 +1,10 @@
+﻿codes/12_DFT/DebugConfig
+codes/13_IDFT/DebugConfig
+codes/14_Rectangular_to_Polar/DebugConfig
+codes/15_Polar_to_Rectangular/DebugConfig
+codes/16_MovingAverage_FIR/DebugConfig
+codes/17_Recursive_MovingAverage_IIR/DebugConfig
+FreeRTOS/1_Task_Creation/DebugConfig
+RTOS/2_osThreadCreation/DebugConfig
+RTOS/3_osTimeManagement/DebugConfig
+RTOS/4_PeriodicThreads/DebugConfig
