@@ -2,6 +2,7 @@
 #include "FreeRTOS.h"                   // ARM.FreeRTOS::RTOS:Core
 #include "task.h"                       // ARM.FreeRTOS::RTOS:Core
 
+
 #include "../drivers/led.h"
 
 #define BLUE_LED_STACK_SIZE   100
@@ -10,67 +11,66 @@
 #define GREEN_LED_STACK_SIZE 	100
 
 
-
 /*Function Definition*/
-void vBlueLedControllerTask(void* pvParameters);
-void vRedLedControllerTask(void* pvParameters);
-void vOrangeLedControllerTask(void* pvParameters);
-void vGreenLedControllerTask(void* pvParameters);
+void vBlueLed_ControllerTask(void* pvParameters);
+void vRedLed_ControllerTask(void* pvParameters);
+void vOrangeLed_ControllerTask(void* pvParameters);
+void vGreenLed_ControllerTask(void* pvParameters);
 
 
 int main(void){
 	GPIO_Init();
 	
-	xTaskCreate(vBlueLedControllerTask, 	"Blue Led Controller", 	BLUE_LED_STACK_SIZE, 		NULL, 1, NULL);
-	xTaskCreate(vRedLedControllerTask, 		"Red Led Controller", 	RED_LED_STACK_SIZE, 		NULL, 1, NULL);
-	xTaskCreate(vOrangeLedControllerTask, "Orange Led Controller",ORANGE_LED_STACK_SIZE, 	NULL, 1, NULL);
-	xTaskCreate(vGreenLedControllerTask, 	"Green Led Controller", GREEN_LED_STACK_SIZE, 	NULL, 1, NULL);
+	xTaskCreate(vBlueLed_ControllerTask,  "Blue Led Controller",  BLUE_LED_STACK_SIZE,  NULL, 1, NULL);
+	xTaskCreate(vRedLed_ControllerTask, 	"Red Led Controller", 	RED_LED_STACK_SIZE, 	NULL, 1, NULL);
+	xTaskCreate(vOrangeLed_ControllerTask,"Orange Led Controller",ORANGE_LED_STACK_SIZE,NULL, 1, NULL);
+	xTaskCreate(vGreenLed_ControllerTask, "Green Led Controller", GREEN_LED_STACK_SIZE, NULL, 1, NULL);
 	
 	vTaskStartScheduler();
 	
 	while(1){
 			
-		
 	}
 }
 
 
-void vBlueLedControllerTask(void* pvParameters){
+void vBlueLed_ControllerTask(void* pvParameters){
 	int i;
 	
 	while(1){
-		HAL_GPIO_TogglePin(GPIOD, BLUE);
-		for(i = 0; i < 700000; i++)
+		HAL_GPIO_TogglePin(LED_PORT, BLUE);
+		for(i = 0; i < 7000; i++)
 		;
 	}
 }
 
-void vRedLedControllerTask(void* pvParameters){
+void vRedLed_ControllerTask(void* pvParameters){
 	int i;
 	
 	while(1){
-		HAL_GPIO_TogglePin(GPIOD, RED);
-		for(i = 0; i < 700000; i++)
+		HAL_GPIO_TogglePin(LED_PORT, RED);
+		for(i = 0; i < 7000; i++)
 		;
 	}
 }
 
-void vOrangeLedControllerTask(void* pvParameters){
+void vOrangeLed_ControllerTask(void* pvParameters){
 	int i;
 	
 	while(1){
-		HAL_GPIO_TogglePin(GPIOD, ORANGE);
-		for(i = 0; i < 700000; i++)
+		HAL_GPIO_TogglePin(LED_PORT, ORANGE);
+		for(i = 0; i < 7000; i++)
 		;
 	}
 }
 
-void vGreenLedControllerTask(void* pvParameters){
+void vGreenLed_ControllerTask(void* pvParameters){
 	int i;
 	
 	while(1){
-		HAL_GPIO_TogglePin(GPIOD, GREEN);
-		for(i = 0; i < 700000; i++)
+		HAL_GPIO_TogglePin(LED_PORT, GREEN);
+		for(i = 0; i < 7000; i++)
 		;
 	}
 }
+
