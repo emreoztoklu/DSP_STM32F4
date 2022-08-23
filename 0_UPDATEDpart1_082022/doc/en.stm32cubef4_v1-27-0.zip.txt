@@ -1,0 +1,12 @@
+
+DOWNLOAD THİS ZİP file: 
+STM32CubeF4  ACTIVE Design Win   Save to MyST
+
+STM32Cube MCU Package for STM32F4 series 
+(HAL, Low-Layer APIs and CMSIS, USB, TCP/IP,
+File system, RTOS, Graphic - 
+and examples running on ST boards)
+ 
+ 
+
+https://www.st.com/en/embedded-software/stm32cubef4.html
