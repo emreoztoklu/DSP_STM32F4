@@ -33,8 +33,8 @@ int main()
 	SystemClock_Config();
 	freq = HAL_RCC_GetHCLKFreq();
 	calc_sig_dft(&inputSignal_f32_1kHz_15kHz[0],&REX[0], &IMX[0],SIG_LENGTH);
-  get_dft_output_mag();
-  plot_rex_signal();
+	get_dft_output_mag();
+	plot_rex_signal();
 
  
 
@@ -69,8 +69,7 @@ int main()
 
 
 
-void calc_sig_dft(float32_t *sig_src_arr, float32_t *sig_dest_rex_arr, float32_t *sig_dest_imx_arr, uint32_t sig_length)
-{
+void calc_sig_dft(float32_t *sig_src_arr, float32_t *sig_dest_rex_arr, float32_t *sig_dest_imx_arr, uint32_t sig_length){
 	int i,k,j;
 	for(j=0;j<(sig_length/2);j++)
 	{
@@ -78,27 +77,24 @@ void calc_sig_dft(float32_t *sig_src_arr, float32_t *sig_dest_rex_arr, float32_t
 		  sig_dest_imx_arr[j] =0;
 	}
 	
-	 for(k=0;k<(sig_length/2);k++)
-	{
-		for(i=0;i<sig_length;i++)
-		{
-					     sig_dest_rex_arr[k] =  sig_dest_rex_arr[k] + sig_src_arr[i]*cos(2*PI*k*i/sig_length);
-							 sig_dest_imx_arr[k] =  sig_dest_imx_arr[k] - sig_src_arr[i]*sin(2*PI*k*i/sig_length);
-
-
+	 for(k=0;k<(sig_length/2);k++){
+		for(i=0;i<sig_length;i++){
+			sig_dest_rex_arr[k] =  sig_dest_rex_arr[k] + sig_src_arr[i]*cos(2*PI*k*i/sig_length);
+			sig_dest_imx_arr[k] =  sig_dest_imx_arr[k] - sig_src_arr[i]*sin(2*PI*k*i/sig_length);		// - işareti kontrol etmen gerekebilir
 		}
 	}
 }
 
-void get_dft_output_mag(void)
-{
+
+void get_dft_output_mag(void){
 	int k;
 	for(k=0;k<(SIG_LENGTH/2);k++){
 	 REX[k] = fabs(REX[k]);
 	}
 }
-void plot_rex_signal(void)
-{
+
+
+void plot_rex_signal(void){
 	int i,j;
 	 for(i=0;i<(SIG_LENGTH/2);i++)
 	{
@@ -107,8 +103,8 @@ void plot_rex_signal(void)
 	}
 }
 
-void SysTick_Handler(void)
-{
+
+void SysTick_Handler(void){
 	 HAL_IncTick();
 	 HAL_SYSTICK_IRQHandler();
 	
